@@ -1,0 +1,186 @@
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  padding: 40px 15px;
+  color: #333;
+}
+
+/* CONTAINER (GLASS EFFECT) */
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* TITLE */
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #444;
+  letter-spacing: 1px;
+}
+
+/* LABEL */
+label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* INPUT, SELECT */
+input,
+select {
+  width: 100%;
+  padding: 11px 12px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: all 0.25s ease;
+  background: #fafafa;
+}
+
+input:focus,
+select:focus {
+  border-color: #667eea;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(102, 126, 234, 0.25);
+  outline: none;
+}
+
+/* CHECKBOX GROUP */
+.checkbox-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: normal;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea, #5a67d8);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(102, 126, 234, 0.4);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* TABLE HEADER */
+th {
+  background: linear-gradient(135deg, #667eea, #5a67d8);
+  color: white;
+  padding: 12px;
+  font-weight: 600;
+}
+
+/* TABLE CELL */
+td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* ZEBRA */
+tr:nth-child(even) {
+  background-color: #f8f9ff;
+}
+
+/* HOVER EFFECT */
+tr:hover {
+  background-color: #eef1ff;
+}
+
+/* NILAI COLOR */
+.merah {
+  background-color: #ffe5e5 !important;
+  color: #b30000;
+  font-weight: 500;
+}
+
+.hijau {
+  background-color: #e6ffe6 !important;
+  color: #006600;
+  font-weight: 500;
+}
+
+/* RESULT TEXT */
+h3 {
+  margin-top: 20px;
+  text-align: center;
+  color: #444;
+}
+
+/* ERROR MESSAGE */
+.error {
+  background: #ffe5e5;
+  color: #b30000;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  body {
+    padding: 20px 10px;
+  }
+}
